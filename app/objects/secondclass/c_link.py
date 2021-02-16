@@ -110,6 +110,7 @@ class Link(BaseObject):
         self._pin = pin
         self.output = False
         self.deadman = deadman
+        self.uploads = []
 
     def __eq__(self, other):
         if isinstance(other, Link):
